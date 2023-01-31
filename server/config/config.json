@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "mBird",
-    "host": "localhost",
+    "password": "1BBA3D8E3B9B053876648B98E001FC3D397D542AD2AC76A2764D472DD637C438",
+    "database": "mbird",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
