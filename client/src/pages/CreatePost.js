@@ -1,17 +1,35 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
+
 function CreatePost() {
   return (
     <div className="createPostPage">
       <Formik>
-        <Form>
+        <Form className="formContainer">
           <label>Title: </label>
-          <Field id="inputCreatePost" name="title" placeholder="(Ex. Title...)" />
+          <Field
+            autocomplete="off"
+            id="inputCreatePost"
+            name="title"
+            placeholder="(Ex. Title...)"
+          />
           <label>Post: </label>
-          <Field id="inputCreatePost" name="postText" placeholder="(Ex. Post...)" />
+          <Field
+            autocomplete="off"
+            id="inputCreatePost"
+            name="postText"
+            placeholder="(Ex. Post...)"
+          />
           <label>Username: </label>
-          <Field id="inputCreatePost" name="username" placeholder="(Ex. User...)" />
+          <Field
+            autocomplete="off"
+            id="inputCreatePost"
+            name="username"
+            placeholder="(Ex. User...)"
+          />
+
+          <button type="submit">Create Post</button>
         </Form>
       </Formik>
     </div>
