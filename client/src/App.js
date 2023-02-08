@@ -8,8 +8,11 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <div className="navbar">
+
         <Link to="/">Home Page</Link>
         <Link to="/createpost">Create a Post</Link>
+        </div>
         <Routes>
           <Route path="/" exact element={<Home/>} />
           <Route path="/createpost" exact element={<CreatePost/>} />
