@@ -12,6 +12,8 @@ function App() {
 
         <Link to="/">Home Page</Link>
         <Link to="/createpost">Create a Post</Link>
+        <Link to="/login">Login</Link>
+        <Link to="/registration">Registration</Link>
         </div>
         <Routes>
           <Route path="/" exact element={<Home/>} />
