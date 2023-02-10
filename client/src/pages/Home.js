@@ -13,6 +13,7 @@ function Home() {
       setListOfPosts(response.data);
     });
   }, []);
+  
   return (
     <div>
       {listOfPosts.map((value, key) => {

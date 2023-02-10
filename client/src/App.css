@@ -3,7 +3,6 @@
   height: auto;
   display: flex;
   align-items: center;
-  padding-top: 40px;
   flex-direction: column;
 }
 
@@ -29,7 +28,6 @@ body {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   cursor: pointer;
 }
-
 .post .title {
   flex: 20%;
   border-bottom: 1px solid lightgray;
@@ -60,14 +58,13 @@ body {
 /* CREATE POST PAGE CSS */
 
 .createPostPage {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   width: 100vw;
   height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .formContainer {
   display: flex;
   flex-direction: column;
@@ -110,12 +107,12 @@ span {
 /* NAVBAR */
 
 .navbar {
-  widows: 100%;
+  width: 100%;
   height: 70px;
   background-color: dodgerblue;
   display: flex;
   align-items: center;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar a {
@@ -125,7 +122,6 @@ span {
 }
 
 /* INDIVIDUAL POST */
-
 .postPage {
   display: flex;
   flex-direction: row;
@@ -205,7 +201,7 @@ button {
   font-size: 25px;
 }
 
-/* Login */
+/* LOGIN */
 
 .loginContainer {
   display: flex;
