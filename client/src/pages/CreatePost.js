@@ -19,7 +19,7 @@ function CreatePost() {
   const onSubmit = (data) => {
     axios.post("http://localhost:3001/posts", data).then((response) => {
       console.log("IT WORKED!");
-    })
+    });
   };
   return (
     <div className="createPostPage">
@@ -32,23 +32,23 @@ function CreatePost() {
           <label>Title: </label>
           <ErrorMessage component="span" name="title" />
           <Field
-            autocomplete="off"
+            autoComplete="off"
             id="inputCreatePost"
             name="title"
             placeholder="(Ex. Title...)"
           />
           <label>Post: </label>
-          <ErrorMessage component="span" name="postText"/>
+          <ErrorMessage component="span" name="postText" />
           <Field
-            autocomplete="off"
+            autoComplete="off"
             id="inputCreatePost"
             name="postText"
             placeholder="(Ex. Post...)"
           />
           <label>Username: </label>
-          <ErrorMessage component="span" name="username"/>
+          <ErrorMessage component="span" name="username" />
           <Field
-            autocomplete="off"
+            autoComplete="off"
             id="inputCreatePost"
             name="username"
             placeholder="(Ex. User...)"
