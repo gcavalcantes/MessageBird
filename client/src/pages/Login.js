@@ -15,7 +15,7 @@ function Login() {
         alert(response.data.error);
       } else {
         sessionStorage.setItem("accessToken", response.data);
-        history.push("/");
+        history("/");
       }
     });
   };
