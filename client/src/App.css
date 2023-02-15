@@ -121,6 +121,12 @@ span {
   color: white;
 }
 
+.navbar button {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+}
+
 /* INDIVIDUAL POST */
 .postPage {
   display: flex;
@@ -228,4 +234,25 @@ button {
 
 .loginContainer input {
   border: 2px solid dodgerblue;
+}
+
+/* TOOLTIP */
+
+.tooltip{
+  display: inline-block;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 10;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
