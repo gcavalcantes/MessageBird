@@ -1,8 +1,6 @@
 const express = require("express");
 const router = express.Router();
-
 const { Likes } = require("../models");
-
 const { validateToken } = require("../middlewares/AuthMiddleware");
 
 router.post("/", validateToken, async (req, res) => {
@@ -14,12 +12,12 @@ router.post("/", validateToken, async (req, res) => {
   });
   if (!found) {
     await Likes.create({ PostId: PostId, UserId: UserId });
-    res.json("Liked the post");
-} else {
+    res.json({ liked: true });
+  } else {
     await Likes.destroy({
-        where: { PostId: PostId, UserId: UserId },
+      where: { PostId: PostId, UserId: UserId },
     });
-    res.json("Unliked the post");
+    res.json({ liked: false });
   }
 });
 
