@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
 
 function Home() {
   const [listOfPosts, setListOfPosts] = useState([]);
@@ -56,14 +57,11 @@ function Home() {
             </div>
             <div className="footer">
               {value.username}{" "}
-              <button
+              <ThumbUpAltIcon
                 onClick={() => {
                   likeAPost(value.id);
                 }}
-              >
-                {" "}
-                Like
-              </button>
+              ></ThumbUpAltIcon>
               <label> {value.Likes.length}</label>
             </div>
           </div>
