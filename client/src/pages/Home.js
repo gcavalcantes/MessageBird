@@ -56,12 +56,21 @@ function Home() {
               {value.postText}
             </div>
             <div className="footer">
-              {value.username}{" "}
-              <ThumbUpAltIcon
-                onClick={() => {
-                  likeAPost(value.id);
-                }}
-              ></ThumbUpAltIcon>
+              <div className="username">{value.username}</div>
+              <div className="buttons">
+                <ThumbUpAltIcon
+                  onClick={() => {
+                    likeAPost(value.id);
+                  }}
+                  className="likeButtn"
+                ></ThumbUpAltIcon>
+                <ThumbUpAltIcon
+                  onClick={() => {
+                    likeAPost(value.id);
+                  }}
+                  className="unlikeButtn"
+                ></ThumbUpAltIcon>
+              </div>
               <label> {value.Likes.length}</label>
             </div>
           </div>
